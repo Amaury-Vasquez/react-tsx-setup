@@ -4,7 +4,7 @@
   <img src="https://i.imgur.com/vPQVBd8.jpg" width="320" alt="React Logo" />
 </p>
 
-<p align="center"><a href="https://react-tsx-boilerplate.netlify.app/" target="_blank"> Initial page </a> </p>
+<p align="center"><a href="https://react-tsx-setup.netlify.app/" target="_blank"> Initial page </a> </p>
 
 Initial setup for React with Typescript projects.
 
