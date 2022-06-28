@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
 import { Layout } from '../Layout';
@@ -10,13 +10,15 @@ const App = () => {
   return (
     <HelmetProvider>
       <GlobalStyles />
-      <Layout>
-        <Suspense fallback={<FallbackScreen />}>
-          <Routes>
-            <Route element={<FallbackScreen />} path="/" />
-          </Routes>
-        </Suspense>
-      </Layout>
+      <BrowserRouter>
+        <Layout>
+          <Suspense fallback={<FallbackScreen />}>
+            <Routes>
+              <Route element={<FallbackScreen />} path="/" />
+            </Routes>
+          </Suspense>
+        </Layout>
+      </BrowserRouter>
     </HelmetProvider>
   );
 };

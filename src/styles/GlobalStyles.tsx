@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -8,16 +8,12 @@ export const GlobalStyles = createGlobalStyle`
     --gray-text:#536162;
     --white: #f4f9f9;
     --green: #c7ffd8;
-    --shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     --light-shadow: 0px 8px 16px 0px rgba(256, 256, 256, 0.2);
     --red: #e84545;
     --loading-red: #c64756;
     --blue: #1597bb;
-    --white-rgba: rgba(256, 256, 256, 0.9);
-    --content-width: 70vw;
-    --content-height: 84vh;
-    --top: 5vh;
-    --gap: 1vw;
+    --white-rgba: rgba(200, 200, 200, 0.1);
   }
 
   *, *:before, *:after {
@@ -40,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     width: 100%; 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Rubik, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
 `;
