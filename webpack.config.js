@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ template: 'src/index.html' }),
+    new HtmlWebpackPlugin({ template: 'public/index.html' }),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -48,6 +48,6 @@ module.exports = {
   ],
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin()],
+    minimizer: [new HtmlMinimizerPlugin(), new TerserPlugin()],
   },
 };

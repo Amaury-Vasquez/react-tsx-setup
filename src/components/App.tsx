@@ -1,13 +1,23 @@
-import { Fragment } from 'react';
+import { Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+
+import { Layout } from '../Layout';
+import { FallbackScreen } from '../FallbackScreen';
 import { GlobalStyles } from '../styles/GlobalStyles';
-import { Sample } from './Sample';
 
 const App = () => {
   return (
-    <Fragment>
+    <HelmetProvider>
       <GlobalStyles />
-      <Sample />
-    </Fragment>
+      <Layout>
+        <Suspense fallback={<FallbackScreen />}>
+          <Routes>
+            <Route element={<FallbackScreen />} path="/" />
+          </Routes>
+        </Suspense>
+      </Layout>
+    </HelmetProvider>
   );
 };
 
