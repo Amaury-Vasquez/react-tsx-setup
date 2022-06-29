@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
 import { Layout } from '../Layout';
-import { FallbackScreen } from '../FallbackScreen';
+import { FallbackScreen } from './FallbackScreen';
 import { GlobalStyles } from '../styles/GlobalStyles';
 
 const App = () => {
