@@ -4,15 +4,13 @@ export const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 16px;
-    --gray: #d4e3e6;
-    --gray-text:#536162;
-    --white: #f4f9f9;
-    --green: #c7ffd8;
-    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    --light-shadow: 0px 8px 16px 0px rgba(256, 256, 256, 0.2);
+    --blue: #3AB0FF;
+    --gray: #F2EBE9;
+    --gray-text:#336162;
+    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
     --red: #e84545;
     --loading-red: #c64756;
-    --blue: #1597bb;
+    --line-height: 2rem;
     --white-rgba: rgba(200, 200, 200, 0.1);
   }
 
